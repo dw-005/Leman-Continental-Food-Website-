@@ -1,0 +1,462 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --text-white: #fff;
+  --btn-blue: #6dcbff;
+  --text-blue: #040a1c;
+  --text-rotate: #57a2cc;
+  --nav-background: #00283f;
+  --cart-text: #7a7879;
+  --bg-dark-blue: #004d73; /* Exact match to your background */
+  --accent-blue: #55c2e1;
+}
+@font-face {
+  font-family: "Asap";
+  src: url("fonts/asap/Asap-Regular.ttf") format(truetype);
+}
+@font-face {
+  font-family: "Satisfy";
+  src: url("fonts/satisfy/Satisfy-Regular.ttf") format(truetype);
+}
+body {
+  font-family: "Asap";
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none !important;
+}
+ul li {
+  list-style: none;
+}
+ul {
+  padding-left: 0 !important;
+}
+svg {
+  width: 72px;
+  height: 72px;
+}
+/* ========= Global Elemnts Ends Here =========== */
+
+/* ===================== */
+/* Hedaer Section */
+/* ===================== */
+
+.bg_header {
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+}
+
+.header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: var(--nav-background);
+}
+.header.sticky .navbar-toggler-icon {
+    color: var(--text-white) !important;
+}
+.nav-link {
+  color: white !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+.nav-link:hover {
+  border-bottom: 2px solid white;
+}
+.logo-text {
+  font-family: "Cursive", serif;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+.sub-logo {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.contact_info a {
+  color: white;
+}
+.contact_info a:hover {
+  color: var(--btn-blue);
+  transition: 0.5s ease-in-out;
+}
+.social_icons a i:hover {
+  color: var(--btn-blue);
+  transition: 0.5s ease-in-out;
+}
+.navbar .nav-item.dropdown {
+  position: relative;
+}
+.navbar .has-megamenu {
+  position: static;
+}
+.navbar .megamenu {
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  width: auto !important;
+  position: absolute;
+  margin-top: 0;
+  background-color: var(--nav-background);
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  z-index: 1000;
+}
+
+.megamenu .title {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.megamenu ul li a {
+  color: var(--text-white);
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  padding: 5px 0;
+  transition: 0.3s;
+}
+
+.megamenu ul li a:hover {
+  color: var(--btn-blue);
+  padding-left: 5px;
+}
+
+.navbar .megamenu_1,
+.navbar .megamenu_2,
+.navbar .megamenu_3,
+.navbar .megamenu_4,
+.navbar .megamenu_5,
+.navbar .megamenu_6,
+.navbar .megamenu_7 {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  display: block;
+}
+.navbar .megamenu_3 {
+  width: 650px !important;
+  margin: 0 auto !important;
+  display: block;
+}
+
+.navbar-toggler-icon {
+    color: var(--text-white) !important;
+}
+/* ===============Most Important================ */
+/* Target the dropdown menu */
+.navbar .nav-item.dropdown .dropdown-menu {
+  display: block; /* Keep it in the DOM */
+  opacity: 0; /* Start invisible */
+  visibility: hidden; /* Prevent clicking while invisible */
+  transform: translateY(10px); /* Slight slide-down effect */
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.1s; /* Small delay before it disappears */
+}
+
+/* Show on Hover */
+.navbar .nav-item.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition-delay: 0s; /* Open instantly on hover */
+}
+
+/* ============================ */
+/* Team Section (Breadcrumb) */
+/* ========================== */
+.the_team {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 400px;
+  padding-bottom: 9rem;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("images/teams/team_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  min-height: 600px;
+  text-align: center;
+}
+
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background: transparent;
+  margin-bottom: 10px;
+}
+.breadcrumb a,
+.breadcrumb span {
+  margin: 0 10px;
+  display: inline-block;
+  color: white;
+}
+.breadcrumb a:hover {
+  color: var(--btn-blue);
+  transition: 0.5s ease-in-out;
+}
+.curent {
+  font-style: italic;
+}
+.about_us {
+  text-align: center;
+}
+.title h1 {
+  font-family: "Satisfy";
+  font-size: 5rem;
+}
+/* ========================== */
+/* Team's Person */
+/* ========================= */
+.chef_lineup {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+  background: url('images/squid_bg.png');
+  background-position: top right;
+  background-repeat: no-repeat;
+
+}
+.description {
+  padding: 0 30px;
+}
+.description h2 a {
+  font-family: "Satisfy";
+  font-size: 3.75rem;
+  line-height: 4.5rem;
+  color: var(--text-blue);
+}
+.description div {
+  font-size: 1.125rem;
+  font-style: italic;
+  color: #7a7879;
+  line-height: 1.5rem;
+  margin-bottom: 20px;
+}
+.description p {
+  margin-bottom: 20px;
+  font-family: "Asap";
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+.description .social-icons a {
+  font-size: 2rem;
+  color: var(--text-blue);
+}
+.person .social-icons {
+    justify-content: center;  
+    align-items: center;       
+    gap: 1.5rem;              
+    margin: 1.5rem auto 0;    
+    width: 100%;              
+}
+.person .social-icons a {
+  font-size: 1.25rem;
+  color: var(--text-blue);
+}
+.description .social-icons a:hover {
+  color: var(--btn-blue);
+  transition: 0.5s ease-in-out;
+}
+.person .social-icons a:hover {
+  color: var(--btn-blue);
+  transition: 0.5s ease-in-out;
+}
+.person {
+  margin-top: 5rem;
+}
+.person figure a img{
+    margin: 0 auto;
+}
+.chef_intro {
+  margin-bottom: 3rem;
+}
+.team_member_info {
+  text-align: center;
+  padding: 1.5rem;
+  padding-bottom: 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.team_info_header {
+  margin-bottom: 1rem;
+}
+.team_member_name a {
+  color: var(--bg-dark-blue);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: -0.5px;
+}
+
+/*====================================*/
+/*=Booking Section=*/
+/*====================================*/
+.booking_hero {
+  background-color: var(--bg-dark-blue);
+  padding: 9rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The Script Heading */
+.booking_text {
+  color: #ffffff;
+  font-family: "Satisfy";
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+  margin-right: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+/* The Button */
+.booking_button {
+  background-color: #72cfff; /* Matches the light blue button */
+  color: #00334e;
+  text-decoration: none;
+  margin-left: 10px;
+  padding: 15px 40px;
+  font-size: 1.1rem;
+
+  transition: background-color 0.3s ease;
+}
+
+.booking_button:hover {
+  background-color:var(--text-blue);
+  color: var(--text-white);
+  transition: 0.5s ease-in-out;
+}
+
+/* Responsive Breakpoint for Mobile */
+@media (max-width: 768px) {
+  .booking_hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 40px 5%;
+  }
+
+  .booking_text {
+    padding-right: 0;
+  }
+}
+
+/* ======================== */
+/* Footer Section */
+/* ======================== */
+
+/* Custom Styles */
+.footer-section {
+  background-color: var(--nav-background);
+  background-image: url("images/about_us/footer_btm.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Headings styles */
+.script-font {
+  font-family: "Satisfy";
+  font-size: 2.2rem;
+}
+.footer .brand_logo {
+  margin: 0 auto;
+}
+.logo-font {
+  font-family: "Cursive", sans-serif;
+  font-size: 3rem;
+  color: #87ceeb; /* Sky Blue */
+}
+.phone_no a {
+  color: var(--text-white);
+}
+.phone_no a:hover {
+  color: var(--accent-blue);
+  transition: 0.5s ease-in-out;
+}
+.email a {
+  color: var(--text-white);
+}
+.email a:hover {
+  color: var(--accent-blue);
+  transition: 0.5s ease-in-out;
+}
+/* Links and Hover Effects */
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #87ceeb;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+.social-icons a {
+  color: #87ceeb;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: translateY(-3px);
+  color: #fff;
+}
+
+/* Back to Top Position */
+.back-to-top {
+  position: absolute;
+  right: 0;
+  bottom: 20%;
+}
+
+.tracking-widest {
+  letter-spacing: 2px;
+}
+
+/* ===================================== */
+/* Media Querires tarts Here */
+@media (max-width: 499px) {
+  .social_icons {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .social_icons {
+    display: none;
+  }
+
+  /* Story Section */
+  .description_1 {
+    padding-left: 0;
+  }
+  .description_2 {
+    padding-right: 0;
+  }
+}

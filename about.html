@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeMan - Finest Seafood</title>
+    <link rel="icon" type="image/png" href="images/header_logo.png" />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <!-- Fancy Box CDN CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <!-- Hedaer section -->
+    <header class="bg_header pb-3">
+      <div
+        class="container d-flex justify-content-between py-3 border-bottom border-secondary mb-3"
+      >
+        <div class="contact_info">
+          <a href="mailto: +1 800 603 6035">
+            <i class="fas fa-phone me-2"></i> +1 800 603 6035
+          </a>
+        </div>
+        <div class="brand_logo mb-4 justify-content-center">
+          <a href="index.html">
+            <img src="images/header_logo.png" alt="brand_logo" loading="lazy" />
+          </a>
+        </div>
+        <div class="social_icons">
+          <a href="https://www.facebook.com/" class="text-white me-3"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.instagram.com/" class="text-white me-3"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+
+      <nav class="navbar navbar-expand-lg navbar-dark header py-5">
+        <div class="container">
+          <button
+            class="navbar-toggler mb-3"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav w-100 justify-content-center">
+              <li class="nav-item dropdown has-megamenu mx-2">
+                <a class="nav-link" href="index.html">Home</a>
+
+                <div
+                  class="dropdown-menu megamenu megamenu_1 shadow-lg"
+                  role="menu"
+                >
+                  <div class="container">
+                    <ul class="list_unstyled">
+                      <li><a href="404.html">Main Home</a></li>
+                      <li><a href="#">Left Menu Home</a></li>
+                      <li><a href="#">Center Menu Home</a></li>
+                      <li><a href="#">Split Showcse Home</a></li>
+                      <li><a href="#">Right Menu Home</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown has-megamenu mx-2">
+                <a class="nav-link active border-bottom" href="#">Pages</a>
+
+                <div
+                  class="dropdown-menu megamenu megamenu_2 shadow-lg"
+                  role="menu"
+                >
+                  <div class="container">
+                    <ul class="list_unstyled">
+                      <li><a href="about.html">About Us </a></li>
+                      <li><a href="team.html">Team</a></li>
+                      <li><a href="#">Menu</a></li>
+                      <li><a href="#">Portfolio</a></li>
+                      <li><a href="#">Gallery </a></li>
+                      <li><a href="#">Contact V1 </a></li>
+                      <li><a href="#">Contact V2 </a></li>
+                      <li><a href="#">Coming Soon page </a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown has-megamenu megamenu_elemnt mx-2">
+                <a class="nav-link" href="#">Elements</a>
+
+                <div
+                  class="dropdown-menu megamenu megamenu_3 shadow-lg"
+                  role="menu"
+                >
+                  <div class="container">
+                    <div class="row g-1">
+                      <div class="col-lg-3">
+                        <h6 class="title">ELEMENTS 1</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="#">Accordions & Toggles</a></li>
+                          <li><a href="#">Alert Boxes & Buttons</a></li>
+                          <li><a href="#">Call to Actions</a></li>
+                          <li><a href="#">Counters & Countdowns</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-3 pt-lg-4">
+                        <ul class="list-unstyled">
+                          <li><a href="#">Reservation Forms</a></li>
+                          <li><a href="#">Pricing Tables</a></li>
+                          <li><a href="#">Tables & Progress Bars</a></li>
+                          <li><a href="#">Testimonials</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-3">
+                        <h6 class="title">TYPOGRAPHY</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="#">Dropcaps & Blockquotes</a></li>
+                          <li><a href="#">Headings & Paragraphs</a></li>
+                          <li><a href="#">RTL Version</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-3">
+                        <h6 class="title">HEADER & FOOTER</h6>
+                        <div class="row">
+                          <div class="col-6">
+                            <ul class="list-unstyled">
+                              <li><a href="#">Header v1</a></li>
+                              <li><a href="#">Header v2</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-6">
+                            <ul class="list-unstyled">
+                              <li><a href="#">Footer v1</a></li>
+                              <li><a href="#">Footer v2</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown has-megamenu mx-2">
+                <a class="nav-link" href="#">Events</a>
+                <div
+                  class="dropdown-menu megamenu megamenu_4 shadow-lg"
+                  role="menu"
+                >
+                  <div class="container">
+                    <ul class="list_unstyled">
+                      <li><a href="events_list.html">Events List</a></li>
+                      <li><a href="#">Events By Month</a></li>
+                      <li><a href="#">Events by Day</a></li>
+                      <li><a href="#">Single Event Page</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown has-megamenu mx-2">
+                <a class="nav-link" href="#">News</a>
+
+                <div
+                  class="dropdown-menu megamenu megamenu_5 shadow-lg"
+                  role="menu"
+                >
+                  <div class="container">
+                    <ul class="list_unstyled">
+                      <li><a href="#">Classic Blog</a></li>
+                      <li><a href="#">Masonry Blog</a></li>
+                      <li><a href="#">Single Blog Post</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown has-megamenu mx-2">
+                <a class="nav-link" href="#">Reservation</a>
+                <div
+                  class="dropdown-menu megamenu megamenu_6 shadow-lg"
+                  role="menu"
+                >
+                  <div class="container">
+                    <ul class="list_unstyled">
+                      <li><a href="#">Via Open table</a></li>
+                      <li><a href="#">Via Booked - Appointment</a></li>
+                      <li><a href="#">Booking Plugin</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown has-megamenu mx-2">
+                <a class="nav-link" href="#">Shop</a>
+                <div
+                  class="dropdown-menu megamenu megamenu_7 shadow-lg"
+                  role="menu"
+                >
+                  <div class="container">
+                    <ul class="list_unstyled">
+                      <li><a href="#">Shop With Right Siderbar</a></li>
+                      <li><a href="#">Shop Without Sidebar</a></li>
+                      <li><a href="#">Single Product Page</a></li>
+                      <li><a href="#">Cart/Checkout</a></li>
+                      <li><a href="my_account.html">My Account</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        class="offcanvas offcanvas-start bg-dark text-white"
+        tabindex="-1"
+        id="offcanvasNavbar"
+      >
+        <div class="offcanvas-header">
+          <a href="index.html">
+            <img src="images/header_logo.png" alt="le man" loading="lazy" />
+          </a>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvas"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Pages</a
+              >
+              <ul class="dropdown-menu">
+                <li><a href="about.html" class="dropdown-item">About Us</a></li>
+                <li><a href="team.html" class="dropdown-item">Team</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Elements</a></li>
+            <li class="nav-item"><a class="nav-link" href="events_list.html">Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reservation</a>
+            </li>
+              <li class="nav-item">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Shop</a
+              >
+              <ul class="dropdown-menu">
+                <li><a href="my_account.html" class="dropdown-item">My Account</a></li>
+               
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================================= -->
+    <!-- About Section -->
+    <!-- ============================== -->
+    <div class="about_us">
+      <div class="title">
+        <nav class="breadcrumb">
+          <a href="index.html">Home</a> <span> - </span>
+          <span class="curent">About Us</span>
+        </nav>
+        <h1>About Us</h1>
+      </div>
+    </div>
+
+    <!-- ============================ -->
+    <!-- Story Section -->
+    <!-- ========================= -->
+    <section class="story">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="story_title">
+              <h2>Our Story</h2>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="description_1">
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris
+                fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus
+                dolor, dapibus eget, elementum vel, cursus eleifend, elit.
+              </p>
+
+              <p>
+                Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac
+                turpis. Integer rutrum ante eu lacus. Vestibulum libero nisl,
+                porta vel, scelerisque eget, malesuada at, neque. Vivamus eget
+                nibh.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="description_2">
+              <p>
+                Suspendisse sollicitudin velit sed leo. Ut pharetra augue nec
+                augue. Nam elit agna,endrerit sit amet, tincidunt ac, viverra
+                sed, nulla.
+              </p>
+
+              <p>
+                Donec porta diam eu massa. Quisque diam lorem, interdum
+                vitae,dapibus ac, scelerisque vitae, pede. Donec eget tellus non
+                erat lacinia fermentum. Donec in velit vel ipsum auctor
+                pulvinar. Vestibulum iaculis lacinia est. Proin dictum elementum
+                velit.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video_section">
+          <a
+            href="https://www.youtube.com/embed/Y2Y2fWgRb24"
+            class="image-fancybox"
+            data-fancybox
+          >
+            <img src="images/about_us/video_bg.jpg" alt="video_background" />
+          </a>
+          <div class="video_btn">
+            <a
+              href="https://www.youtube.com/embed/Y2Y2fWgRb24"
+              class="image-fancybox"
+              data-fancybox
+            >
+              <i class="fa-solid fa-play"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================== -->
+    <!-- Offer Section -->
+    <!-- ===================================== -->
+
+    <section class="offer-section">
+      <div class="container">
+        <h2 class="section-title">What We Offer</h2>
+
+        <div class="row justify-content-center">
+          <div class="col-md-4 offer-card">
+            <div class="offer-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 353 358.1"
+                class="svg replaced-svg"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: none;
+                      stroke: #6dcbff;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 8px;
+                    }
+                  </style>
+                </defs>
+                <title>сatering_1</title>
+                <g id="Слой_2" data-name="Слой 2">
+                  <g id="Слой_1-2" data-name="Слой 1">
+                    <path
+                      class="cls-1"
+                      d="M286.85,222.74c20-.68,59.42-10.29,62.15-32H4c2.73,21.71,42.13,31.32,62.15,32ZM28.38,186.8c0-.77-.05-1.56-.05-2.32s0-1.56,0-2.33c0-186.35,296.64-186.24,296.64,0,0,.78,0,1.57,0,2.33s0,1.55-.06,2.32M175,68.11c53.6,0,107.2,29.85,118.68,89.51M176.5,4c7.74,0,14,6.6,14,14.74s-6.28,14.74-14,14.74-14-6.6-14-14.74S168.76,4,176.5,4Z"
+                    ></path>
+                    <path
+                      class="cls-1"
+                      d="M272.36,323.77,167.52,354.1m73.21-31.79c4.35-12.93,4-23.56,20.4-49.72,5.36-8.58,21.7-24.62,25-32.5,15.27-20.42-25.71-14.7-36.15,0-5.71,8-7.76,14.47-15.55,18.6-24,12.71-25.88-4.51-48.7-27.73-14.86-15.12-43.55-3.19-31.9,8.17m20.52,21.12L145.66,230.7c-15.23-15.67-38.78.71-25.84,12.81M151.2,269.7l-31.38-26.19-10.64-10.11c-18.63-17.7-39.58,3.52-15.58,22.79l41.1,33c4.15,3.33,53.8,37.46,52.88,59.09"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <h3>Catering</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris
+              fermentum dictum magna.
+            </p>
+            <a href="#" class="find-more"
+              >Find Out More &nbsp;
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 317.89 137.2"
+                class="svg replaced-svg"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: none;
+                      stroke: #6dcbff;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 9.75px;
+                    }
+                  </style>
+                </defs>
+                <title>squid_1</title>
+                <g id="Слой_2" data-name="Слой 2">
+                  <g id="Слой_1-2" data-name="Слой 1">
+                    <path
+                      class="cls-1"
+                      d="M235,35.6l18.45-25.9c4.58-6.43,12.36-6.39,17-.09l35.18,47.56c4.66,6.31,4.63,16.67-.06,23l-35,47.38c-4.7,6.36-12.26,6.31-17,.09l-17.23-22.47M304.9,75.33c-47.58,33.95-59.67,25.38-125.93,25.38-6.32,0-13.79-5.18-13.79-11.49V48c0-6.32,7.47-11.5,13.79-11.49,66.17,0,78.3-8.54,125.74,25.24,11,7.82,11.09,5.81.19,13.59ZM163.42,31.08c1.82,7.65-5.58,16-16.53,18.57s-21.31-1.47-23.13-9.12,5.58-16,16.53-18.57,21.31,1.47,23.13,9.12ZM144.53,29c.53,2.23-1.63,4.66-4.83,5.43s-6.23-.43-6.76-2.66,1.63-4.66,4.83-5.43,6.23.43,6.76,2.66Zm18.9,77.16c1.82-7.65-5.58-16-16.53-18.57S125.59,89,123.76,96.67s5.58,16,16.53,18.57,21.31-1.47,23.13-9.12Zm-18.9,2.12c.53-2.23-1.63-4.66-4.83-5.43s-6.23.43-6.76,2.66,1.63,4.66,4.83,5.43,6.23-.43,6.76-2.66ZM120.75,32.92c-15.38,0-52.28-33-76-16.12l-.75,0m76.74,86.42c-15.38,0-52.28,33-76,16.12l-.75,0m74.19-64C75.64,29.21,39.5,62.9,22.09,37.72l-.88-.29m89.25,34.16c-51.14-12-62.69,2.85-105.59-2.73m97.75,20.7c-38,12.89-63.51-10.52-80.92,14.66l-.87.29"
+                    ></path>
+                  </g>
+                </g></svg
+            ></a>
+          </div>
+
+          <div class="col-md-4 offer-card">
+            <div class="offer-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 258.1 287.83"
+                class="svg replaced-svg"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: none;
+                      stroke: #6dcbff;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 7px;
+                    }
+                  </style>
+                </defs>
+                <title>private_dining</title>
+                <g id="Слой_2" data-name="Слой 2">
+                  <g id="Слой_1-2" data-name="Слой 1">
+                    <path
+                      class="cls-1"
+                      d="M141.62,91,144.71,3.5H250l4.54,137.68c1,25.66-25.75,46.69-57.2,46.69h0c-10.61,0-13.69-.39-22.35-4.56M229.59,85.5l2.14,53.18c.43,7.25-3.64,13.86-9.5,18.64a36.19,36.19,0,0,1-22.84,7.76h0m52.33-117H143M249.46,284.33H145.27m52.1-96.46v93.45"
+                    ></path>
+                    <path
+                      class="cls-1"
+                      d="M73.61,199.38a49.91,49.91,0,0,1-22.73,5.08h0c-26,0-48.18-17.41-47.36-38.66l3.76-114h87.2l1.61,39.7M73.56,119.71l1.77,44c.35,6-3,11.47-7.86,15.43a30,30,0,0,1-18.91,6.42h0M94.89,88.71h-89M94,284.33H7.74m43.14-79.86v77.37"
+                    ></path>
+                    <path
+                      class="cls-1"
+                      d="M91,108.69h65.87l2.84,86.11c.61,16-16.11,29.2-35.77,29.2h0c-19.67,0-36.39-13.15-35.78-29.2L91,108.69ZM144,160l1.34,33.26c.27,4.53-2.28,8.67-5.94,11.66a22.63,22.63,0,0,1-14.28,4.85h0m32.73-73.18h-68m66.57,147.77H91.3M123.89,224v58.45"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <h3>Private Dining</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris
+              fermentum dictum magna.
+            </p>
+            <a href="#" class="find-more"
+              >Find Out More &nbsp;
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 317.89 137.2"
+                class="svg replaced-svg"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: none;
+                      stroke: #6dcbff;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 9.75px;
+                    }
+                  </style>
+                </defs>
+                <title>squid_1</title>
+                <g id="Слой_2" data-name="Слой 2">
+                  <g id="Слой_1-2" data-name="Слой 1">
+                    <path
+                      class="cls-1"
+                      d="M235,35.6l18.45-25.9c4.58-6.43,12.36-6.39,17-.09l35.18,47.56c4.66,6.31,4.63,16.67-.06,23l-35,47.38c-4.7,6.36-12.26,6.31-17,.09l-17.23-22.47M304.9,75.33c-47.58,33.95-59.67,25.38-125.93,25.38-6.32,0-13.79-5.18-13.79-11.49V48c0-6.32,7.47-11.5,13.79-11.49,66.17,0,78.3-8.54,125.74,25.24,11,7.82,11.09,5.81.19,13.59ZM163.42,31.08c1.82,7.65-5.58,16-16.53,18.57s-21.31-1.47-23.13-9.12,5.58-16,16.53-18.57,21.31,1.47,23.13,9.12ZM144.53,29c.53,2.23-1.63,4.66-4.83,5.43s-6.23-.43-6.76-2.66,1.63-4.66,4.83-5.43,6.23.43,6.76,2.66Zm18.9,77.16c1.82-7.65-5.58-16-16.53-18.57S125.59,89,123.76,96.67s5.58,16,16.53,18.57,21.31-1.47,23.13-9.12Zm-18.9,2.12c.53-2.23-1.63-4.66-4.83-5.43s-6.23.43-6.76,2.66,1.63,4.66,4.83,5.43,6.23-.43,6.76-2.66ZM120.75,32.92c-15.38,0-52.28-33-76-16.12l-.75,0m76.74,86.42c-15.38,0-52.28,33-76,16.12l-.75,0m74.19-64C75.64,29.21,39.5,62.9,22.09,37.72l-.88-.29m89.25,34.16c-51.14-12-62.69,2.85-105.59-2.73m97.75,20.7c-38,12.89-63.51-10.52-80.92,14.66l-.87.29"
+                    ></path>
+                  </g>
+                </g></svg
+            ></a>
+          </div>
+
+          <div class="col-md-4 offer-card">
+            <div class="offer-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 380.07 309.84"
+                class="svg replaced-svg"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: none;
+                      stroke: #6dcbff;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 8px;
+                    }
+                  </style>
+                </defs>
+                <title>gift_cards</title>
+                <g id="Слой_2" data-name="Слой 2">
+                  <g id="Слой_1-2" data-name="Слой 1">
+                    <path
+                      class="cls-1"
+                      d="M115.25,174.13c-45.55,17.74-84.34-7.95-63.81-35.86,9.51-12.94,35.34-14.93,48.87,3.32,11.29,15.22,15.22,28.19,19.53,32.31L190,241.11m-69.45-67c45.55,17.74,84.34-7.95,63.81-35.86-9.51-12.94-35.34-14.93-48.87,3.32-11.29,15.22-15.22,28.19-19.53,32.31L45.8,241.11M103.58,76.73v38.1m28.64-38.1v35.91M103.58,219.57v86.27m28.64-86.27v86.27m46.09-105.62H340.2M210,171.58H340.2M185.58,271.72H315.76M48.61,200.22H4m22-28.64H4"
+                    ></path>
+                    <path
+                      class="cls-1"
+                      d="M36.48,69.68V23.4A19.46,19.46,0,0,1,55.88,4H356.67a19.46,19.46,0,0,1,19.4,19.4V220.14a19.46,19.46,0,0,1-19.4,19.4H345.33"
+                    ></path>
+                    <path
+                      class="cls-1"
+                      d="M23.4,71.29H324.18a19.46,19.46,0,0,1,19.4,19.4V286.43a19.46,19.46,0,0,1-19.4,19.4H23.4A19.46,19.46,0,0,1,4,286.43V90.7a19.46,19.46,0,0,1,19.4-19.4Z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <h3>Gift Cards</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris
+              fermentum dictum magna.
+            </p>
+            <a href="#" class="find-more"
+              >Find Out More &nbsp;
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 317.89 137.2"
+                class="svg replaced-svg"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: none;
+                      stroke: #6dcbff;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 9.75px;
+                    }
+                  </style>
+                </defs>
+                <title>squid_1</title>
+                <g id="Слой_2" data-name="Слой 2">
+                  <g id="Слой_1-2" data-name="Слой 1">
+                    <path
+                      class="cls-1"
+                      d="M235,35.6l18.45-25.9c4.58-6.43,12.36-6.39,17-.09l35.18,47.56c4.66,6.31,4.63,16.67-.06,23l-35,47.38c-4.7,6.36-12.26,6.31-17,.09l-17.23-22.47M304.9,75.33c-47.58,33.95-59.67,25.38-125.93,25.38-6.32,0-13.79-5.18-13.79-11.49V48c0-6.32,7.47-11.5,13.79-11.49,66.17,0,78.3-8.54,125.74,25.24,11,7.82,11.09,5.81.19,13.59ZM163.42,31.08c1.82,7.65-5.58,16-16.53,18.57s-21.31-1.47-23.13-9.12,5.58-16,16.53-18.57,21.31,1.47,23.13,9.12ZM144.53,29c.53,2.23-1.63,4.66-4.83,5.43s-6.23-.43-6.76-2.66,1.63-4.66,4.83-5.43,6.23.43,6.76,2.66Zm18.9,77.16c1.82-7.65-5.58-16-16.53-18.57S125.59,89,123.76,96.67s5.58,16,16.53,18.57,21.31-1.47,23.13-9.12Zm-18.9,2.12c.53-2.23-1.63-4.66-4.83-5.43s-6.23.43-6.76,2.66,1.63,4.66,4.83,5.43,6.23-.43,6.76-2.66ZM120.75,32.92c-15.38,0-52.28-33-76-16.12l-.75,0m76.74,86.42c-15.38,0-52.28,33-76,16.12l-.75,0m74.19-64C75.64,29.21,39.5,62.9,22.09,37.72l-.88-.29m89.25,34.16c-51.14-12-62.69,2.85-105.59-2.73m97.75,20.7c-38,12.89-63.51-10.52-80.92,14.66l-.87.29"
+                    ></path>
+                  </g>
+                </g></svg
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================== -->
+    <!-- Testimonaial Section -->
+    <!-- =================================== -->
+
+    <section class="testimonial">
+      <div class="container">
+        <h2 class="testimonial_heading">Clients Testimonials</h2>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial_content">
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="review">
+                  <blockquote>
+                    <p>
+                      “Duis ac turpis. Integer rutrum ante eu lacus. Vestibulum
+                      libero nisl, porta vel, scelerisque eget, malesuada at,
+                      neque. Vivamus eget nibh. Etiam cursus leo vel metus.
+                      Nulla facilisi.”
+                    </p>
+                  </blockquote>
+                </div>
+                <h4 class="client_name">Mark & Rebecca Johnson, CA, USA</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial_content">
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="review">
+                  <blockquote>
+                    <p>
+                      “Mauris fermentum dictum magna. Sed laoreet aliquam leo.
+                      Ut tellus dolor, dapibus eget, elementum vel, cursus
+                      eleifend, elit. Aenean auctor wisi et urna. Aliquam erat
+                      volutpat. ”
+                    </p>
+                  </blockquote>
+                </div>
+                <h4 class="client_name">Marta Healy, CA, USA</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial_content">
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="review">
+                  <blockquote>
+                    <p>
+                      “Duis ac turpis. Integer rutrum ante eu lacus. Vestibulum
+                      libero nisl, porta vel, scelerisque eget, malesuada at,
+                      neque. Vivamus eget nibh. Etiam cursus leo vel metus.
+                      Nulla facilisi.”
+                    </p>
+                  </blockquote>
+                </div>
+                <h4 class="client_name">Mark & Rebecca Johnson, CA, USA</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial_content">
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="review">
+                  <blockquote>
+                    <p>
+                      “Mauris fermentum dictum magna. Sed laoreet aliquam leo.
+                      Ut tellus dolor, dapibus eget, elementum vel, cursus
+                      eleifend, elit. Aenean auctor wisi et urna. Aliquam erat
+                      volutpat. ”
+                    </p>
+                  </blockquote>
+                </div>
+                <h4 class="client_name">Marta Healy, CA, USA</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial_content">
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="review">
+                  <blockquote>
+                    <p>
+                      “Duis ac turpis. Integer rutrum ante eu lacus. Vestibulum
+                      libero nisl, porta vel, scelerisque eget, malesuada at,
+                      neque. Vivamus eget nibh. Etiam cursus leo vel metus.
+                      Nulla facilisi.”
+                    </p>
+                  </blockquote>
+                </div>
+                <h4 class="client_name">Mark & Rebecca Johnson, CA, USA</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial_content">
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="review">
+                  <blockquote>
+                    <p>
+                      “Mauris fermentum dictum magna. Sed laoreet aliquam leo.
+                      Ut tellus dolor, dapibus eget, elementum vel, cursus
+                      eleifend, elit. Aenean auctor wisi et urna. Aliquam erat
+                      volutpat. ”
+                    </p>
+                  </blockquote>
+                </div>
+                <h4 class="client_name">Marta Healy, CA, USA</h4>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================== -->
+    <!-- Booking Section -->
+    <!-- =============================== -->
+
+    <section class="booking-hero">
+      <div class="overlay">
+        <div class="content">
+          <h2 class="headline">Enjoy unforgettable dining experience</h2>
+          <a href="#" class="book-btn">Book a Table</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================== -->
+    <!-- ====Footer Section======== -->
+    <!-- ========================== -->
+
+    <footer class="footer">
+      <footer class="footer-section text-white pt-5 pb-3">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+            <div class="col">
+              <h3 class="script-font mb-4">We Are Open</h3>
+              <div class="mb-3">
+                <p class="fw-bold mb-1">Brunch</p>
+                <p>Saturday: 10am - 2pm</p>
+              </div>
+              <div class="mb-3">
+                <p class="fw-bold mb-1">Dinner</p>
+                <p class="mb-0">Monday - Thursday: 5pm - 10pm</p>
+                <p>Friday - Saturday: 4pm - 11pm</p>
+              </div>
+              <div class="mb-3">
+                <p class="fw-bold mb-1">Happy Hour</p>
+                <p class="mb-0">Monday - Thursday: 5pm - 6pm</p>
+                <p>Friday - Saturday: 2pm - 4pm</p>
+              </div>
+            </div>
+
+            <div class="col text-center">
+              <div class="mb-4">
+                <figure class="brand_logo d-flex justify-content-center">
+                  <a href="about.html">
+                    <img
+                      src="images/header_logo.png"
+                      alt="le man"
+                      loading="lazy"
+                    />
+                  </a>
+                </figure>
+              </div>
+              <address class="mb-3">
+                56 12th Ave,<br />
+                New York, NY 10011<br />
+                <a href="#" class="text-info text-decoration-none"
+                  >Get Direction</a
+                >
+              </address>
+              <div class="my-3">
+                <div class="mb-1 phone_no">
+                  <a href="tel:+1 800 603 6035">+1 800 603 6035</a>
+                </div>
+                <div class="mb-2 phone_no">
+                  <a href="tel:+1 300 503 6086">+1 300 503 6086</a>
+                </div>
+                <div class="email">
+                  <a
+                    href="mailto:mail@companyname.com"
+                    class="text-decoration-none"
+                    >mail@companyname.com</a
+                  >
+                </div>
+              </div>
+              <div
+                class="social-icons d-flex justify-content-center gap-3 mt-4"
+              >
+                <a href="https://www.facebook.com/" target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="https://www.youtube.com/" target="_blank"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a href="https://in.pinterest.com/" target="_blank"
+                  ><i class="fab fa-pinterest"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col position-relative">
+              <h3 class="script-font mb-4">Useful Links</h3>
+              <ul class="list-unstyled footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="events_list.html">Events</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="my_account.html">Reservation</a></li>
+              </ul>
+              <div class="back-to-top">
+                <a href="#" class="btn btn-light btn-sm"
+                  ><i class="fas fa-chevron-up"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <hr class="mt-5 opacity-25" />
+
+          <div class="text-center mt-4">
+            <p class="opacity-75">
+              Copyright © 2026
+              <a href="index.html"><span class="text-info">LeMar</span></a
+              >. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".image-fancybox").fancybox({
+          type: "iframe",
+          iframe: {
+            css: {
+              width: "80%",
+              height: "80%",
+            },
+          },
+          closeBtn: true,
+          helpers: {
+            overlay: {
+              opacity: 0.9,
+            },
+          },
+        });
+      });
+    </script>
+
+    <!-- Initialize Swiper for Testimonial section -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        centeredSlides: false,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          // When window width is >= 768px (Desktop/Tablet)
+          992: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+        },
+      });
+    </script>
+
+    <!-- Script for Sticky Scroll  -->
+    <script>
+      const header = document.querySelector(".header");
+      window.onscroll = () => {
+        this.scrollY > 40
+          ? header.classList.add("sticky")
+          : header.classList.remove("sticky");
+      };
+    </script>
+  </body>
+</html>
